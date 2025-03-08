@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #1a1a1a; /* Dark theme background */
+  overflow: hidden;
+}
+
+/* Anime Character Background */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images7.alphacoders.com/106/thumb-1920-1061011.jpg'); /* New background image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust opacity to make text readable */
+  z-index: -1;
+}
+
+/* Container Styles */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* New Quote Section */
+.quote {
+  margin: 20px 0;
+}
+
+.quote blockquote {
+  font-size: 1.8rem; /* Larger font size for the quote */
+  margin: 15px 0;
+  font-style: italic;
+  color: #ccc;
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for better readability */
+}
+
+/* Social Media Icons */
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Instagram Hover Effect */
+.social-links a[href*="instagram.com"]:hover {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Twitter Hover Effect */
+.social-links a[href*="x.com"]:hover {
+  color: #1DA1F2; /* Twitter blue */
+}
+
+/* Discord Hover Effect */
+.social-links a[href*="discord.gg"]:hover {
+  color: #5865F2; /* Discord blurple */
+}
